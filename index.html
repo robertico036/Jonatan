@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jonatan Photography</title>
+	<style type="text/css">
+		#header {
+			border: 4px solid 	#DCDCDC;
+			height: 10vh;
+			margin: 0;
+			padding: 0;
+		}
+		.perfilPhoto {
+			width: 10vw;
+			border-radius: 90px;
+			margin: 1vh;
+		}
+		div {
+			background-color: 	#F0FFFF;
+		}
+		.photo {
+			width: 100vw;
+		}
+		body {
+			text-align: center;
+			background-color: 	#F0FFFF;
+
+		}
+
+		#image {
+			width: 400px;
+			height: 300px;
+			border: 3px solid black;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="header">
+		<h3>Jonatan Estevez Potograpy Services</h3>
+	</div>
+		<img class="perfilPhoto" src="logo.png" alt=""><br><br><br><br><br><br><br><br><br>
+
+
+		<div>
+		<img id="image" src="https://www.nikon.com/news/2019/img/pic_190215_01_02.jpg" alt="dynamic image"/>
+	<br/>
+	<button onclick="changeImage()">Next Image</button><br><br><br><br><br><br><br><br><br>
+
+	</div>
+	<script type="text/javascript">
+		// create a counter to zero
+		var count = 0;
+	var imgs = [
+			"berlin.png",
+			"car.png",
+			"wedding.png",
+			"memo.png",
+			"limo.png"
+		];
+		// grab the image
+		var image = document.getElementById('image');
+
+		// set the onclick function
+		function changeImage() {
+			image.src = imgs[count++];
+			if(count >= imgs.length) count = 0;
+		}
+	</script>
+	<footer>
+			<a href="https://www.facebook.com/jonatan.estevez.52"><img src="facebook.png"></a>
+			<a href=https://www.instagram.com/jonatanestevezphotography/?hl=es></a>
+			<p>&copy; 2018 Jonatan Estevez</p>
+			<p><b>EMAIL:</b> estevezjonatan305@gmail.com</p>
+			<a>+1 (786) 757 7226</a>
+	</footer>
+</body>
+</html>
